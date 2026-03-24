@@ -1,133 +1,153 @@
+---
+import { CircleCheck } from "@lucide/astro";
+---
+
 <section
-  class="scroll-mt-28 bg-gradient-to-b from-secondary/95 to-secondary pt-6 pb-14 text-primary sm:pt-8 sm:pb-16 md:pb-20"
+  id="planes"
+  class="scroll-mt-28 bg-[#0b0e14] py-24 sm:py-32"
   aria-labelledby="plans-heading"
 >
-  <div class="section-inner flex flex-col items-center gap-8 sm:gap-10">
-    <div class="max-w-2xl text-center" data-aos="fade-up">
+  <div class="section-inner max-w-7xl">
+    <div class="mb-16 space-y-4 text-center md:mb-20" data-aos="fade-up">
+      <span
+        class="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#b3c5ff]"
+      >
+        Inversión inteligente
+      </span>
       <h2
         id="plans-heading"
-        class="text-4xl font-extralight tracking-tight text-primary md:text-6xl lg:text-7xl"
+        class="text-4xl font-bold tracking-tighter text-[#e1e2eb] md:text-5xl"
       >
-        Planes
+        Planes que escalan contigo
       </h2>
-      <p class="mt-4 text-balance text-lg font-light text-primary/90 md:text-xl">
-        Elige el alcance que necesitas; todos incluyen acompañamiento y hosting.
-      </p>
     </div>
     <div
-      class="grid w-full max-w-6xl grid-cols-1 gap-10 md:grid-cols-3 md:gap-6 lg:gap-8"
+      class="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3 lg:gap-8"
     >
       <article
-        class="flex h-full min-h-[420px] flex-col rounded-2xl border border-primary/20 bg-primary p-8 shadow-xl shadow-black/25"
+        data-aos="fade-up"
+        class="flex flex-col justify-between rounded-xl border border-[#424656]/10 bg-[#10131a] p-10"
       >
-        <h3 class="mb-3 text-center text-xl font-semibold text-[#efe8df] md:text-left md:text-2xl">
-          Plan Emprendedor
-        </h3>
-        <p class="text-pretty text-center text-[#efe8df]/95 md:text-left">
-          Landing page estática para dar a conocer tu negocio, productos o
-          servicios.
-        </p>
-        <ul
-          class="mt-5 flex flex-1 flex-col gap-2 text-sm text-[#efe8df]/95 md:text-base [&>li]:text-center md:[&>li]:text-left"
+        <div>
+          <h3 class="mb-2 text-2xl font-bold text-[#e1e2eb]">Emprendedor</h3>
+          <div class="mb-6 font-black text-[#b3c5ff]">
+            <span class="text-4xl">Desde $2,499</span>
+            <span class="text-sm font-normal text-[#c2c6d8]"> MXN</span>
+          </div>
+          <p class="mb-6 text-sm leading-relaxed text-[#c2c6d8]">
+            Landing page estática para dar a conocer tu negocio, productos o
+            servicios.
+          </p>
+          <ul class="mb-10 space-y-4">
+            <li class="flex items-center gap-3 text-[#c2c6d8]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Diseño personalizado
+            </li>
+            <li class="flex items-center gap-3 text-[#c2c6d8]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Secciones: Inicio, Sobre nosotros, Servicios, Contacto
+            </li>
+            <li class="flex items-center gap-3 text-[#c2c6d8]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              SEO básico y diseño responsive
+            </li>
+            <li class="flex items-center gap-3 text-[#c2c6d8]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Hosting incluido
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#contact"
+          class="block w-full rounded-xl border border-[#b3c5ff] py-4 text-center text-base font-bold text-[#b3c5ff] no-underline transition hover:bg-[#b3c5ff]/5"
+          >Seleccionar</a
         >
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Diseño personalizado</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Secciones: Inicio, Sobre nosotros, Servicios, Contacto</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>SEO básico</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Diseño responsive</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Hosting incluido</span>
-          </li>
-        </ul>
-        <p class="price mt-6 text-center text-2xl font-black text-secondary">
-          Desde $2,499 MXN
-        </p>
       </article>
+
       <article
-        class="flex h-full min-h-[420px] flex-col rounded-2xl border-2 border-secondary/80 bg-primary p-8 shadow-xl shadow-black/30 ring-2 ring-secondary/30"
+        data-aos="fade-up"
+        data-aos-delay="80"
+        class="relative z-10 flex flex-col justify-between rounded-xl border border-[#0066ff]/30 bg-[#272a31] p-10 shadow-2xl shadow-[#0066ff]/10 lg:scale-[1.02]"
       >
-        <h3 class="mb-3 text-center text-xl font-semibold text-[#efe8df] md:text-left md:text-2xl">
-          Plan PyME
-        </h3>
-        <p class="text-pretty text-center text-[#efe8df]/95 md:text-left">
-          Inventario, ventas, clientes y procesos adaptados a tu operación.
-        </p>
-        <ul
-          class="mt-5 flex flex-1 flex-col gap-2 text-sm text-[#efe8df]/95 md:text-base [&>li]:text-center md:[&>li]:text-left"
+        <div
+          class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#0066ff] px-4 py-1 text-xs font-bold uppercase tracking-widest text-[#f8f7ff]"
         >
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Diseño de sistemas personalizados</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Integración con herramientas existentes (si aplica)</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Capacitación</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Hosting incluido</span>
-          </li>
-        </ul>
-        <p class="price mt-6 text-center text-2xl font-black text-secondary">
-          Desde $9,999 MXN
-        </p>
+          Más popular
+        </div>
+        <div>
+          <h3 class="mb-2 mt-2 text-2xl font-bold text-[#e1e2eb]">PyME</h3>
+          <div class="mb-6 font-black text-[#b3c5ff]">
+            <span class="text-4xl">Desde $9,999</span>
+            <span class="text-sm font-normal text-[#c2c6d8]"> MXN</span>
+          </div>
+          <p class="mb-6 text-sm leading-relaxed text-[#e1e2eb]/90">
+            Inventario, ventas, clientes y procesos adaptados a tu operación.
+          </p>
+          <ul class="mb-10 space-y-4">
+            <li class="flex items-center gap-3 text-[#e1e2eb]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Diseño de sistemas personalizados
+            </li>
+            <li class="flex items-center gap-3 text-[#e1e2eb]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Integración con herramientas existentes (si aplica)
+            </li>
+            <li class="flex items-center gap-3 text-[#e1e2eb]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Capacitación
+            </li>
+            <li class="flex items-center gap-3 text-[#e1e2eb]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Hosting incluido
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#contact"
+          class="block w-full rounded-xl bg-[#0066ff] py-4 text-center text-base font-bold text-[#f8f7ff] no-underline shadow-lg shadow-[#0066ff]/20 transition hover:opacity-90"
+          >Seleccionar</a
+        >
       </article>
+
       <article
-        class="flex h-full min-h-[420px] flex-col rounded-2xl border border-primary/20 bg-primary p-8 shadow-xl shadow-black/25"
+        data-aos="fade-up"
+        data-aos-delay="160"
+        class="flex flex-col justify-between rounded-xl border border-[#424656]/10 bg-[#10131a] p-10"
       >
-        <h3 class="mb-3 text-center text-xl font-semibold text-[#efe8df] md:text-left md:text-2xl">
-          Plan Empresarial
-        </h3>
-        <p class="text-pretty text-center text-[#efe8df]/95 md:text-left">
-          Software a la medida con análisis, consultoría y pruebas exhaustivas.
-        </p>
-        <ul
-          class="mt-5 flex flex-1 flex-col gap-2 text-sm text-[#efe8df]/95 md:text-base [&>li]:text-center md:[&>li]:text-left"
+        <div>
+          <h3 class="mb-2 text-2xl font-bold text-[#e1e2eb]">Empresarial</h3>
+          <div class="mb-6 font-black text-[#b3c5ff]">
+            <span class="text-4xl">Desde $14,999</span>
+            <span class="text-sm font-normal text-[#c2c6d8]"> MXN</span>
+          </div>
+          <p class="mb-6 text-sm leading-relaxed text-[#c2c6d8]">
+            Software a la medida con análisis, consultoría y pruebas
+            exhaustivas.
+          </p>
+          <ul class="mb-10 space-y-4">
+            <li class="flex items-center gap-3 text-[#c2c6d8]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Análisis y desarrollo a medida
+            </li>
+            <li class="flex items-center gap-3 text-[#c2c6d8]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Consultoría en necesidades y soluciones
+            </li>
+            <li class="flex items-center gap-3 text-[#c2c6d8]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Implementación, pruebas y responsive
+            </li>
+            <li class="flex items-center gap-3 text-[#c2c6d8]">
+              <CircleCheck class="shrink-0 text-[#b3c5ff]" size={20} aria-hidden="true" />
+              Opcional: landing de presentación · hosting incluido
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#contact"
+          class="block w-full rounded-xl border border-[#b3c5ff] py-4 text-center text-base font-bold text-[#b3c5ff] no-underline transition hover:bg-[#b3c5ff]/5"
+          >Seleccionar</a
         >
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Análisis y desarrollo a medida</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Consultoría en necesidades y soluciones</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Implementación y pruebas</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Responsive</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Opcional: landing de presentación</span>
-          </li>
-          <li class="flex gap-2 md:items-start">
-            <span class="text-secondary" aria-hidden="true">✓</span>
-            <span>Hosting incluido</span>
-          </li>
-        </ul>
-        <p class="price mt-6 text-center text-2xl font-black text-secondary">
-          Desde $14,999 MXN
-        </p>
       </article>
     </div>
   </div>

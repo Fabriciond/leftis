@@ -25,7 +25,7 @@ const ogImage = new URL(asset("img/logo.png"), siteBase).href;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#101720" />
+    <meta name="theme-color" content="#10131a" />
     <title>{title}</title>
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" href={asset("img/logo.png")} type="image/png" />
@@ -46,7 +46,9 @@ const ogImage = new URL(asset("img/logo.png"), siteBase).href;
     <meta name="twitter:description" content={description} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
   </head>
-  <body class="bg-primary font-sans leading-relaxed text-white antialiased">
+  <body
+    class="bg-[#10131a] font-sans leading-relaxed text-[#e1e2eb] antialiased"
+  >
     <a class="skip-link" href="#main-content">Saltar al contenido</a>
     <slot />
     <script>

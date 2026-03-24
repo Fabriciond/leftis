@@ -1,98 +1,83 @@
 ---
-import { asset } from "../utils/base";
+import { Terminal, MousePointerClick, ChartLine } from "@lucide/astro";
 ---
 
 <section
   id="services"
-  class="scroll-mt-28 border-b border-secondary/15 bg-primary pt-16 pb-8 sm:pt-20 sm:pb-10"
+  class="scroll-mt-28 bg-[#10131a] py-24 sm:py-32"
   aria-labelledby="services-heading"
 >
-  <div class="section-inner flex flex-col items-center gap-10">
-    <div class="flex w-full max-w-3xl flex-col items-center gap-4 text-center" data-aos="fade-up">
+  <div class="section-inner max-w-7xl">
+    <div class="mb-16 space-y-4 md:mb-20" data-aos="fade-up">
       <h2
         id="services-heading"
-        class="text-4xl font-extralight tracking-tight text-secondary md:text-6xl lg:text-7xl"
+        class="text-3xl font-bold tracking-tighter text-[#e1e2eb] md:text-5xl"
       >
-        Servicios
+        Nuestros servicios
       </h2>
-      <p class="text-balance text-lg font-light text-white/95 md:text-xl">
-        Soluciones claras para presencia web, crecimiento digital y calidad de
-        software.
-      </p>
+      <div class="h-1 w-20 rounded-full bg-[#0066ff]"></div>
     </div>
     <div
-      class="grid w-full max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-6 lg:gap-10"
+      class="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-8 lg:gap-10"
     >
       <article
         data-aos="fade-right"
-        class="flex flex-col items-center gap-5 rounded-2xl border border-secondary/20 bg-primary/50 p-8 text-center shadow-lg shadow-black/20 transition hover:border-secondary/40"
+        class="group rounded-xl bg-[#191c22] p-10 transition-all duration-500 hover:-translate-y-2 hover:bg-[#272a31]"
       >
         <div
-          class="flex h-[180px] w-[180px] shrink-0 items-center justify-center rounded-full bg-secondary shadow-[0_0_24px_rgba(164,216,255,0.35)] sm:h-[200px] sm:w-[200px]"
+          class="mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#0e4e6f] transition-transform duration-500 group-hover:scale-110"
         >
-          <img
-            src={asset("img/web.png")}
-            alt=""
-            width="100"
-            height="100"
-            class="h-1/2 w-1/2 object-contain"
-            loading="lazy"
-            decoding="async"
+          <Terminal
+            class="text-[#b3c5ff]"
+            size={32}
+            stroke-width={1.75}
+            aria-hidden="true"
           />
         </div>
-        <h3 class="text-xl font-semibold text-white md:text-2xl">
-          Desarrollo web
-        </h3>
-        <p class="text-balance text-secondary/95">
-          Construcción de aplicaciones web modernas y mantenibles.
+        <h3 class="mb-4 text-xl font-bold text-[#e1e2eb]">Desarrollo web</h3>
+        <p class="leading-relaxed text-[#c2c6d8]">
+          Plataformas robustas, escalables y optimizadas para SEO, construidas
+          con las tecnologías más modernas del ecosistema actual.
         </p>
       </article>
       <article
         data-aos="fade-up"
-        class="flex flex-col items-center gap-5 rounded-2xl border border-secondary/20 bg-primary/50 p-8 text-center shadow-lg shadow-black/20 transition hover:border-secondary/40"
+        class="group rounded-xl bg-[#191c22] p-10 transition-all duration-500 hover:-translate-y-2 hover:bg-[#272a31]"
       >
         <div
-          class="flex h-[180px] w-[180px] shrink-0 items-center justify-center rounded-full bg-secondary shadow-[0_0_24px_rgba(164,216,255,0.35)] sm:h-[200px] sm:w-[200px]"
+          class="mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#0e4e6f] transition-transform duration-500 group-hover:scale-110"
         >
-          <img
-            src={asset("img/cel.png")}
-            alt=""
-            width="100"
-            height="100"
-            class="h-1/2 w-1/2 object-contain"
-            loading="lazy"
-            decoding="async"
+          <MousePointerClick
+            class="text-[#b3c5ff]"
+            size={32}
+            stroke-width={1.75}
+            aria-hidden="true"
           />
         </div>
-        <h3 class="text-xl font-semibold text-white md:text-2xl">
-          Marketing digital
-        </h3>
-        <p class="text-balance text-secondary/95">
-          Estrategias de presencia online alineadas a tu negocio.
+        <h3 class="mb-4 text-xl font-bold text-[#e1e2eb]">Marketing digital</h3>
+        <p class="leading-relaxed text-[#c2c6d8]">
+          Estrategias de crecimiento basadas en datos, gestión de campañas y
+          posicionamiento de marca en canales digitales estratégicos.
         </p>
       </article>
       <article
         data-aos="fade-left"
-        class="flex flex-col items-center gap-5 rounded-2xl border border-secondary/20 bg-primary/50 p-8 text-center shadow-lg shadow-black/20 transition hover:border-secondary/40"
+        class="group rounded-xl bg-[#191c22] p-10 transition-all duration-500 hover:-translate-y-2 hover:bg-[#272a31]"
       >
         <div
-          class="flex h-[180px] w-[180px] shrink-0 items-center justify-center rounded-full bg-secondary shadow-[0_0_24px_rgba(164,216,255,0.35)] sm:h-[200px] sm:w-[200px]"
+          class="mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#0e4e6f] transition-transform duration-500 group-hover:scale-110"
         >
-          <img
-            src={asset("img/colsulting.png")}
-            alt=""
-            width="100"
-            height="100"
-            class="h-1/2 w-1/2 object-contain"
-            loading="lazy"
-            decoding="async"
+          <ChartLine
+            class="text-[#b3c5ff]"
+            size={32}
+            stroke-width={1.75}
+            aria-hidden="true"
           />
         </div>
-        <h3 class="text-xl font-semibold text-white md:text-2xl">
-          Consultoría
-        </h3>
-        <p class="text-balance text-secondary/95">
-          Código de calidad, revisiones y buenas prácticas.
+        <h3 class="mb-4 text-xl font-bold text-[#e1e2eb]">Consultoría</h3>
+        <p class="leading-relaxed text-[#c2c6d8]">
+          Asesoramiento técnico para la transformación digital de procesos,
+          selección de stack tecnológico y optimización de flujos de trabajo.
         </p>
       </article>
     </div>
