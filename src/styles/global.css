@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar {
-  display: none;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-primary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-secondary/40 hover:bg-secondary/60;
+  }
+}
+
+@layer components {
+  .skip-link {
+    @apply fixed left-4 top-4 z-[1001] -translate-y-[200%] rounded-lg bg-secondary px-4 py-3 text-sm font-semibold text-primary shadow-lg transition-transform focus:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary;
+  }
+
+  .section-inner {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
 }

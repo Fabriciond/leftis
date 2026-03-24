@@ -2,116 +2,169 @@
 import { asset } from "../utils/base";
 ---
 
-<div
-  class="plans mt-8 flex flex-col items-center gap-8 bg-secondary pt-8 text-primary"
+<section
+  class="scroll-mt-28 bg-gradient-to-b from-secondary/95 to-secondary pt-6 pb-14 text-primary sm:pt-8 sm:pb-16 md:pb-20"
+  aria-labelledby="plans-heading"
 >
-  <div class="title text-center" data-aos="fade-up">
-    <h1 class="text-4xl font-extralight text-primary md:text-7xl">Planes</h1>
-    <p class="mt-4 text-center text-xl font-extralight text-primary">
-      Descubre nuestros planes diseñados para cubrir tus necesidades
-      específicas.
-    </p>
-  </div>
-  <div
-    class="plans-cards flex flex-col items-center gap-8 px-8 pb-16 pt-8 md:flex-row md:items-stretch"
-  >
-    <div
-      class="plan-card relative max-w-lg rounded-[10px] bg-primary p-8 md:max-w-none md:flex-1"
-    >
-      <img
-        src={asset("img/emprendedor.png")}
-        alt=""
-        class="absolute -left-[25px] -top-[25px] h-[150px] w-[150px]"
-      />
+  <div class="section-inner flex flex-col items-center gap-8 sm:gap-10">
+    <div class="max-w-2xl text-center" data-aos="fade-up">
       <h2
-        class="m-4 text-center text-2xl font-medium text-[#efe8df] md:text-left"
+        id="plans-heading"
+        class="text-4xl font-extralight tracking-tight text-primary md:text-6xl lg:text-7xl"
       >
-        Plan Emprendedor
+        Planes
       </h2>
-      <p class="text-pretty text-center text-[#efe8df] md:text-left">
-        Ofrecemos una landing page estática que ayudará a dar a conocer tu
-        negocio, productos o servicios.
+      <p class="mt-4 text-balance text-lg font-light text-primary/90 md:text-xl">
+        Elige el alcance que necesitas; todos incluyen acompañamiento y hosting.
       </p>
-      <ul
-        class="mt-4 list-disc pl-5 text-center text-[#efe8df] md:text-left"
+    </div>
+    <div
+      class="grid w-full max-w-6xl grid-cols-1 gap-10 md:grid-cols-3 md:gap-6 lg:gap-8"
+    >
+      <article
+        class="relative flex h-full min-h-[420px] flex-col rounded-2xl border border-primary/20 bg-primary p-8 pt-14 shadow-xl shadow-black/25"
       >
-        <li>Diseño personalizado</li>
-        <li>Secciones: Inicio, Sobre Nosotros, Servicios, Contacto</li>
-        <li>Optimización básica para motores de búsqueda (SEO)</li>
-        <li>Adaptación a dispositivos móviles (responsive design)</li>
-        <li>Servicio de Hosting</li>
-      </ul>
-      <div>
-        <h1 class="price mt-4 text-center text-2xl font-black text-secondary">
+        <img
+          src={asset("img/emprendedor.png")}
+          alt=""
+          width="150"
+          height="150"
+          class="absolute -left-3 -top-3 h-28 w-28 object-contain drop-shadow-md sm:-left-4 sm:-top-4 sm:h-[150px] sm:w-[150px]"
+          loading="lazy"
+          decoding="async"
+        />
+        <h3 class="mb-3 text-center text-xl font-semibold text-[#efe8df] md:text-left md:text-2xl">
+          Plan Emprendedor
+        </h3>
+        <p class="text-pretty text-center text-[#efe8df]/95 md:text-left">
+          Landing page estática para dar a conocer tu negocio, productos o
+          servicios.
+        </p>
+        <ul
+          class="mt-5 flex flex-1 flex-col gap-2 text-sm text-[#efe8df]/95 md:text-base [&>li]:text-center md:[&>li]:text-left"
+        >
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Diseño personalizado</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Secciones: Inicio, Sobre nosotros, Servicios, Contacto</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>SEO básico</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Diseño responsive</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Hosting incluido</span>
+          </li>
+        </ul>
+        <p class="price mt-6 text-center text-2xl font-black text-secondary">
           Desde $2,499 MXN
-        </h1>
-      </div>
-    </div>
-    <div
-      class="plan-card relative max-w-lg rounded-[10px] bg-primary p-8 md:max-w-none md:flex-1"
-    >
-      <img
-        src={asset("img/emprendedor.png")}
-        alt=""
-        class="absolute -left-[25px] -top-[25px] h-[150px] w-[150px]"
-      />
-      <h2
-        class="m-4 text-center text-2xl font-medium text-[#efe8df] md:text-left"
+        </p>
+      </article>
+      <article
+        class="relative flex h-full min-h-[420px] flex-col rounded-2xl border-2 border-secondary/80 bg-primary p-8 pt-14 shadow-xl shadow-black/30 ring-2 ring-secondary/30"
       >
-        Plan PyMe
-      </h2>
-      <p class="text-pretty text-center text-[#efe8df] md:text-left">
-        Ofrecemos soluciones especializadas como manejo de inventario, sistema
-        de ventas, gestión de clientes, y más.
-      </p>
-      <ul
-        class="mt-4 list-disc pl-5 text-center text-[#efe8df] md:text-left"
-      >
-        <li>Desarrollo de sistemas personalizados</li>
-        <li>Integración con herramientas existentes (si aplica)</li>
-        <li>Capacitación para el uso del sistema</li>
-        <li>Servicio de Hosting</li>
-      </ul>
-      <div>
-        <h1 class="price mt-4 text-center text-2xl font-black text-secondary">
+        <img
+          src={asset("img/emprendedor.png")}
+          alt=""
+          width="150"
+          height="150"
+          class="absolute -left-3 -top-3 h-28 w-28 object-contain drop-shadow-md sm:-left-4 sm:-top-4 sm:h-[150px] sm:w-[150px]"
+          loading="lazy"
+          decoding="async"
+        />
+        <p
+          class="absolute right-4 top-4 rounded-full bg-secondary/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-secondary"
+        >
+          Popular
+        </p>
+        <h3 class="mb-3 text-center text-xl font-semibold text-[#efe8df] md:text-left md:text-2xl">
+          Plan PyME
+        </h3>
+        <p class="text-pretty text-center text-[#efe8df]/95 md:text-left">
+          Inventario, ventas, clientes y procesos adaptados a tu operación.
+        </p>
+        <ul
+          class="mt-5 flex flex-1 flex-col gap-2 text-sm text-[#efe8df]/95 md:text-base [&>li]:text-center md:[&>li]:text-left"
+        >
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Diseño de sistemas personalizados</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Integración con herramientas existentes (si aplica)</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Capacitación</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Hosting incluido</span>
+          </li>
+        </ul>
+        <p class="price mt-6 text-center text-2xl font-black text-secondary">
           Desde $9,999 MXN
-        </h1>
-      </div>
-    </div>
-    <div
-      class="plan-card relative max-w-lg rounded-[10px] bg-primary p-8 md:max-w-none md:flex-1"
-    >
-      <img
-        src={asset("img/emprendedor.png")}
-        alt=""
-        class="absolute -left-[25px] -top-[25px] h-[150px] w-[150px]"
-      />
-      <h2
-        class="m-4 text-center text-2xl font-medium text-[#efe8df] md:text-left"
+        </p>
+      </article>
+      <article
+        class="relative flex h-full min-h-[420px] flex-col rounded-2xl border border-primary/20 bg-primary p-8 pt-14 shadow-xl shadow-black/25"
       >
-        Plan Empresarial
-      </h2>
-      <p class="text-pretty text-center text-[#efe8df] md:text-left">
-        Nuestro plan más completo está dirigido a empresas que requieren un
-        software totalmente a la medida para sus necesidades específicas.
-      </p>
-      <ul
-        class="mt-4 list-disc pl-5 text-center text-[#efe8df] md:text-left"
-      >
-        <li>Análisis y desarrollo de software personalizado</li>
-        <li>
-          Consultoría para identificar necesidades y soluciones tecnológicas
-        </li>
-        <li>Implementación y pruebas exhaustivas</li>
-        <li>Adaptación a dispositivos móviles (responsive design)</li>
-        <li>Opcional: Landing page de presentación</li>
-        <li>Servicio de Hosting</li>
-      </ul>
-      <div>
-        <h1 class="price mt-4 text-center text-2xl font-black text-secondary">
+        <img
+          src={asset("img/emprendedor.png")}
+          alt=""
+          width="150"
+          height="150"
+          class="absolute -left-3 -top-3 h-28 w-28 object-contain drop-shadow-md sm:-left-4 sm:-top-4 sm:h-[150px] sm:w-[150px]"
+          loading="lazy"
+          decoding="async"
+        />
+        <h3 class="mb-3 text-center text-xl font-semibold text-[#efe8df] md:text-left md:text-2xl">
+          Plan Empresarial
+        </h3>
+        <p class="text-pretty text-center text-[#efe8df]/95 md:text-left">
+          Software a la medida con análisis, consultoría y pruebas exhaustivas.
+        </p>
+        <ul
+          class="mt-5 flex flex-1 flex-col gap-2 text-sm text-[#efe8df]/95 md:text-base [&>li]:text-center md:[&>li]:text-left"
+        >
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Análisis y desarrollo a medida</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Consultoría en necesidades y soluciones</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Implementación y pruebas</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Responsive</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Opcional: landing de presentación</span>
+          </li>
+          <li class="flex gap-2 md:items-start">
+            <span class="text-secondary" aria-hidden="true">✓</span>
+            <span>Hosting incluido</span>
+          </li>
+        </ul>
+        <p class="price mt-6 text-center text-2xl font-black text-secondary">
           Desde $14,999 MXN
-        </h1>
-      </div>
+        </p>
+      </article>
     </div>
   </div>
-</div>
+</section>

@@ -37,5 +37,21 @@ export function initApp(): void {
     });
   }
 
-  AOS.init();
+  const prefersReduced =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (prefersReduced) {
+    document.querySelectorAll("[data-aos]").forEach((el) => {
+      el.removeAttribute("data-aos");
+      el.removeAttribute("data-aos-delay");
+    });
+  } else {
+    AOS.init({
+      duration: 650,
+      once: true,
+      offset: 64,
+      easing: "ease-out-cubic",
+    });
+  }
 }

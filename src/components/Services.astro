@@ -2,62 +2,99 @@
 import { asset } from "../utils/base";
 ---
 
-<div id="services" class="mt-8 flex flex-col items-center gap-8">
-  <div
-    class="title mt-8 flex w-4/5 flex-col items-center gap-8 border-b border-secondary"
-    data-aos="fade-up"
-  >
-    <h1
-      class="text-center text-4xl font-extralight text-secondary md:text-7xl"
-    >
-      Servicios
-    </h1>
-    <p class="pb-8 text-center text-xl font-extralight text-white">
-      Déjanos ayudarte con tu próximo proyecto
-    </p>
-  </div>
-  <div
-    class="service-cards mt-8 flex flex-col items-center gap-8 p-4 md:flex-row md:items-stretch"
-  >
-    <div
-      data-aos="fade-right"
-      class="service-card flex w-full max-w-md flex-col items-center gap-4 p-8 md:w-[30%]"
-    >
-      <div
-        class="cover-logo flex h-[200px] w-[200px] items-center justify-center rounded-full bg-secondary shadow-[0_0_20px_#a4d8ff]"
+<section
+  id="services"
+  class="scroll-mt-28 border-b border-secondary/15 bg-primary pt-16 pb-8 sm:pt-20 sm:pb-10"
+  aria-labelledby="services-heading"
+>
+  <div class="section-inner flex flex-col items-center gap-10">
+    <div class="flex w-full max-w-3xl flex-col items-center gap-4 text-center" data-aos="fade-up">
+      <h2
+        id="services-heading"
+        class="text-4xl font-extralight tracking-tight text-secondary md:text-6xl lg:text-7xl"
       >
-        <img src={asset("img/web.png")} alt="" class="h-1/2 w-1/2" />
-      </div>
-      <h2 class="text-center text-2xl font-medium text-white">Desarrollo Web</h2>
-      <p class="text-center text-secondary">Construcción de aplicaciones web</p>
-    </div>
-    <div
-      data-aos="fade-up"
-      class="service-card flex w-full max-w-md flex-col items-center gap-4 p-8 md:w-[30%]"
-    >
-      <div
-        class="cover-logo flex h-[200px] w-[200px] items-center justify-center rounded-full bg-secondary shadow-[0_0_20px_#a4d8ff]"
-      >
-        <img src={asset("img/cel.png")} alt="" class="h-1/2 w-1/2" />
-      </div>
-      <h2 class="text-center text-2xl font-medium text-white">
-        Marketing Digital
+        Servicios
       </h2>
-      <p class="text-center text-secondary">Estrategias de presencia online</p>
-    </div>
-    <div
-      data-aos="fade-left"
-      class="service-card flex w-full max-w-md flex-col items-center gap-4 p-8 md:w-[30%]"
-    >
-      <div
-        class="cover-logo flex h-[200px] w-[200px] items-center justify-center rounded-full bg-secondary shadow-[0_0_20px_#a4d8ff]"
-      >
-        <img src={asset("img/colsulting.png")} alt="" class="h-1/2 w-1/2" />
-      </div>
-      <h2 class="text-center text-2xl font-medium text-white">Consultoria</h2>
-      <p class="text-center text-secondary">
-        Código de calidad y buenas prácticas
+      <p class="text-balance text-lg font-light text-white/95 md:text-xl">
+        Soluciones claras para presencia web, crecimiento digital y calidad de
+        software.
       </p>
     </div>
+    <div
+      class="grid w-full max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-6 lg:gap-10"
+    >
+      <article
+        data-aos="fade-right"
+        class="flex flex-col items-center gap-5 rounded-2xl border border-secondary/20 bg-primary/50 p-8 text-center shadow-lg shadow-black/20 transition hover:border-secondary/40"
+      >
+        <div
+          class="flex h-[180px] w-[180px] shrink-0 items-center justify-center rounded-full bg-secondary shadow-[0_0_24px_rgba(164,216,255,0.35)] sm:h-[200px] sm:w-[200px]"
+        >
+          <img
+            src={asset("img/web.png")}
+            alt=""
+            width="100"
+            height="100"
+            class="h-1/2 w-1/2 object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <h3 class="text-xl font-semibold text-white md:text-2xl">
+          Desarrollo web
+        </h3>
+        <p class="text-balance text-secondary/95">
+          Construcción de aplicaciones web modernas y mantenibles.
+        </p>
+      </article>
+      <article
+        data-aos="fade-up"
+        class="flex flex-col items-center gap-5 rounded-2xl border border-secondary/20 bg-primary/50 p-8 text-center shadow-lg shadow-black/20 transition hover:border-secondary/40"
+      >
+        <div
+          class="flex h-[180px] w-[180px] shrink-0 items-center justify-center rounded-full bg-secondary shadow-[0_0_24px_rgba(164,216,255,0.35)] sm:h-[200px] sm:w-[200px]"
+        >
+          <img
+            src={asset("img/cel.png")}
+            alt=""
+            width="100"
+            height="100"
+            class="h-1/2 w-1/2 object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <h3 class="text-xl font-semibold text-white md:text-2xl">
+          Marketing digital
+        </h3>
+        <p class="text-balance text-secondary/95">
+          Estrategias de presencia online alineadas a tu negocio.
+        </p>
+      </article>
+      <article
+        data-aos="fade-left"
+        class="flex flex-col items-center gap-5 rounded-2xl border border-secondary/20 bg-primary/50 p-8 text-center shadow-lg shadow-black/20 transition hover:border-secondary/40"
+      >
+        <div
+          class="flex h-[180px] w-[180px] shrink-0 items-center justify-center rounded-full bg-secondary shadow-[0_0_24px_rgba(164,216,255,0.35)] sm:h-[200px] sm:w-[200px]"
+        >
+          <img
+            src={asset("img/colsulting.png")}
+            alt=""
+            width="100"
+            height="100"
+            class="h-1/2 w-1/2 object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <h3 class="text-xl font-semibold text-white md:text-2xl">
+          Consultoría
+        </h3>
+        <p class="text-balance text-secondary/95">
+          Código de calidad, revisiones y buenas prácticas.
+        </p>
+      </article>
+    </div>
   </div>
-</div>
+</section>
