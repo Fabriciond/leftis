@@ -1,4 +1,0 @@
-/* Complemento mínimo: scrollbar oculta (difícil de expresar solo con utilidades Tailwind CDN) */
-::-webkit-scrollbar {
-  display: none;
-}
