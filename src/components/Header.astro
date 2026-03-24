@@ -1,5 +1,5 @@
 ---
-
+import { asset } from "../utils/base";
 ---
 
 <header class="print:hidden">
@@ -11,10 +11,18 @@
       class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-8"
     >
       <a
-        class="shrink-0 text-xl font-black tracking-tighter text-[#b3c5ff] no-underline transition-opacity hover:opacity-90"
+        class="flex shrink-0 items-center gap-2.5 text-xl font-black tracking-tighter text-[#b3c5ff] no-underline transition-opacity hover:opacity-90 sm:gap-3"
         href="#main-content"
       >
-        Leftis Systems
+        <img
+          src={asset("img/logo.png")}
+          width="44"
+          height="44"
+          class="h-10 w-10 object-contain sm:h-11 sm:w-11"
+          alt=""
+          aria-hidden="true"
+        />
+        <span>Leftis Systems</span>
       </a>
       <button
         id="navToggle"

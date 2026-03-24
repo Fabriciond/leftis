@@ -1,4 +1,6 @@
 ---
+import { asset } from "../utils/base";
+
 const year = new Date().getFullYear();
 ---
 
@@ -9,7 +11,20 @@ const year = new Date().getFullYear();
     class="section-inner mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 md:flex-row md:items-start"
   >
     <div class="space-y-4 text-center md:text-left">
-      <div class="text-lg font-bold text-[#b3c5ff]">Leftis Systems</div>
+      <a
+        href="#main-content"
+        class="inline-flex items-center gap-3 text-lg font-bold text-[#b3c5ff] no-underline transition hover:opacity-90 md:justify-start"
+      >
+        <img
+          src={asset("img/logo.png")}
+          width="48"
+          height="48"
+          class="h-11 w-11 shrink-0 object-contain"
+          alt=""
+          aria-hidden="true"
+        />
+        <span>Leftis Systems</span>
+      </a>
       <p class="text-sm text-[#99cdf3]">
         © {year} Leftis Systems. The Digital Architect.
       </p>
