@@ -1,0 +1,117 @@
+---
+import { asset } from "../utils/base";
+---
+
+<div
+  class="plans mt-8 flex flex-col items-center gap-8 bg-secondary pt-8 text-primary"
+>
+  <div class="title text-center" data-aos="fade-up">
+    <h1 class="text-4xl font-extralight text-primary md:text-7xl">Planes</h1>
+    <p class="mt-4 text-center text-xl font-extralight text-primary">
+      Descubre nuestros planes diseñados para cubrir tus necesidades
+      específicas.
+    </p>
+  </div>
+  <div
+    class="plans-cards flex flex-col items-center gap-8 px-8 pb-16 pt-8 md:flex-row md:items-stretch"
+  >
+    <div
+      class="plan-card relative max-w-lg rounded-[10px] bg-primary p-8 md:max-w-none md:flex-1"
+    >
+      <img
+        src={asset("img/emprendedor.png")}
+        alt=""
+        class="absolute -left-[25px] -top-[25px] h-[150px] w-[150px]"
+      />
+      <h2
+        class="m-4 text-center text-2xl font-medium text-[#efe8df] md:text-left"
+      >
+        Plan Emprendedor
+      </h2>
+      <p class="text-pretty text-center text-[#efe8df] md:text-left">
+        Ofrecemos una landing page estática que ayudará a dar a conocer tu
+        negocio, productos o servicios.
+      </p>
+      <ul
+        class="mt-4 list-disc pl-5 text-center text-[#efe8df] md:text-left"
+      >
+        <li>Diseño personalizado</li>
+        <li>Secciones: Inicio, Sobre Nosotros, Servicios, Contacto</li>
+        <li>Optimización básica para motores de búsqueda (SEO)</li>
+        <li>Adaptación a dispositivos móviles (responsive design)</li>
+        <li>Servicio de Hosting</li>
+      </ul>
+      <div>
+        <h1 class="price mt-4 text-center text-2xl font-black text-secondary">
+          Desde $3,000 MXN
+        </h1>
+      </div>
+    </div>
+    <div
+      class="plan-card relative max-w-lg rounded-[10px] bg-primary p-8 md:max-w-none md:flex-1"
+    >
+      <img
+        src={asset("img/emprendedor.png")}
+        alt=""
+        class="absolute -left-[25px] -top-[25px] h-[150px] w-[150px]"
+      />
+      <h2
+        class="m-4 text-center text-2xl font-medium text-[#efe8df] md:text-left"
+      >
+        Plan PyMe
+      </h2>
+      <p class="text-pretty text-center text-[#efe8df] md:text-left">
+        Ofrecemos soluciones especializadas como manejo de inventario, sistema
+        de ventas, gestión de clientes, y más.
+      </p>
+      <ul
+        class="mt-4 list-disc pl-5 text-center text-[#efe8df] md:text-left"
+      >
+        <li>Desarrollo de sistemas personalizados</li>
+        <li>Integración con herramientas existentes (si aplica)</li>
+        <li>Capacitación para el uso del sistema</li>
+        <li>Servicio de Hosting</li>
+      </ul>
+      <div>
+        <h1 class="price mt-4 text-center text-2xl font-black text-secondary">
+          Desde $9,000 MXN
+        </h1>
+      </div>
+    </div>
+    <div
+      class="plan-card relative max-w-lg rounded-[10px] bg-primary p-8 md:max-w-none md:flex-1"
+    >
+      <img
+        src={asset("img/emprendedor.png")}
+        alt=""
+        class="absolute -left-[25px] -top-[25px] h-[150px] w-[150px]"
+      />
+      <h2
+        class="m-4 text-center text-2xl font-medium text-[#efe8df] md:text-left"
+      >
+        Plan Empresarial
+      </h2>
+      <p class="text-pretty text-center text-[#efe8df] md:text-left">
+        Nuestro plan más completo está dirigido a empresas que requieren un
+        software totalmente a la medida para sus necesidades específicas.
+      </p>
+      <ul
+        class="mt-4 list-disc pl-5 text-center text-[#efe8df] md:text-left"
+      >
+        <li>Análisis y desarrollo de software personalizado</li>
+        <li>
+          Consultoría para identificar necesidades y soluciones tecnológicas
+        </li>
+        <li>Implementación y pruebas exhaustivas</li>
+        <li>Adaptación a dispositivos móviles (responsive design)</li>
+        <li>Opcional: Landing page de presentación</li>
+        <li>Servicio de Hosting</li>
+      </ul>
+      <div>
+        <h1 class="price mt-4 text-center text-2xl font-black text-secondary">
+          Desde $15,000 MXN
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>

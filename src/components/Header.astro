@@ -1,0 +1,70 @@
+---
+import { asset } from "../utils/base";
+---
+
+<header>
+  <nav
+    class="nav-bar fixed top-0 z-[999] mb-2.5 flex w-full items-center justify-between bg-primary px-8 py-4 shadow-[0_0_5px_rgba(164,216,255,0.5)]"
+  >
+    <div class="flex w-full flex-wrap items-center justify-between gap-4">
+      <a
+        class="flex items-center text-xl font-semibold text-secondary no-underline md:text-2xl"
+        href="#Home"
+      >
+        <img
+          src={asset("img/logo.png")}
+          class="mr-2.5 h-[50px] w-[50px]"
+          alt=""
+        />Leftis
+      </a>
+      <button
+        id="navToggle"
+        class="inline-flex items-center justify-center rounded bg-secondary p-2 text-primary md:hidden"
+        type="button"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span class="sr-only">Abrir menú principal</span>
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <div
+        id="navbarNav"
+        class="hidden w-full flex-col items-center gap-4 pb-4 md:flex md:w-auto md:flex-row md:justify-end md:pb-0"
+      >
+        <ul
+          class="flex w-full flex-col items-center gap-4 md:w-auto md:flex-row md:gap-6"
+        >
+          <li>
+            <a
+              class="nav-link block text-lg font-medium text-secondary no-underline transition-all duration-300 hover:border-b hover:border-secondary"
+              aria-current="page"
+              href="#Home">Home</a>
+          </li>
+          <li>
+            <a
+              class="nav-link block text-lg font-medium text-secondary no-underline transition-all duration-300 hover:border-b hover:border-secondary"
+              href="#services">Servicios</a>
+          </li>
+          <li>
+            <a
+              class="nav-link block text-lg font-medium text-secondary no-underline transition-all duration-300 hover:border-b hover:border-secondary"
+              href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

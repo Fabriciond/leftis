@@ -1,0 +1,63 @@
+---
+import { asset } from "../utils/base";
+---
+
+<div id="services" class="mt-8 flex flex-col items-center gap-8">
+  <div
+    class="title mt-8 flex w-4/5 flex-col items-center gap-8 border-b border-secondary"
+    data-aos="fade-up"
+  >
+    <h1
+      class="text-center text-4xl font-extralight text-secondary md:text-7xl"
+    >
+      Servicios
+    </h1>
+    <p class="pb-8 text-center text-xl font-extralight text-white">
+      Déjanos ayudarte con tu próximo proyecto
+    </p>
+  </div>
+  <div
+    class="service-cards mt-8 flex flex-col items-center gap-8 p-4 md:flex-row md:items-stretch"
+  >
+    <div
+      data-aos="fade-right"
+      class="service-card flex w-full max-w-md flex-col items-center gap-4 p-8 md:w-[30%]"
+    >
+      <div
+        class="cover-logo flex h-[200px] w-[200px] items-center justify-center rounded-full bg-secondary shadow-[0_0_20px_#a4d8ff]"
+      >
+        <img src={asset("img/web.png")} alt="" class="h-1/2 w-1/2" />
+      </div>
+      <h2 class="text-center text-2xl font-medium text-white">Desarrollo Web</h2>
+      <p class="text-center text-secondary">Construcción de aplicaciones web</p>
+    </div>
+    <div
+      data-aos="fade-up"
+      class="service-card flex w-full max-w-md flex-col items-center gap-4 p-8 md:w-[30%]"
+    >
+      <div
+        class="cover-logo flex h-[200px] w-[200px] items-center justify-center rounded-full bg-secondary shadow-[0_0_20px_#a4d8ff]"
+      >
+        <img src={asset("img/cel.png")} alt="" class="h-1/2 w-1/2" />
+      </div>
+      <h2 class="text-center text-2xl font-medium text-white">
+        Marketing Digital
+      </h2>
+      <p class="text-center text-secondary">Estrategias de presencia online</p>
+    </div>
+    <div
+      data-aos="fade-left"
+      class="service-card flex w-full max-w-md flex-col items-center gap-4 p-8 md:w-[30%]"
+    >
+      <div
+        class="cover-logo flex h-[200px] w-[200px] items-center justify-center rounded-full bg-secondary shadow-[0_0_20px_#a4d8ff]"
+      >
+        <img src={asset("img/colsulting.png")} alt="" class="h-1/2 w-1/2" />
+      </div>
+      <h2 class="text-center text-2xl font-medium text-white">Consultoria</h2>
+      <p class="text-center text-secondary">
+        Código de calidad y buenas prácticas
+      </p>
+    </div>
+  </div>
+</div>

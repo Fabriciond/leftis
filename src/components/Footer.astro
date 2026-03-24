@@ -1,0 +1,65 @@
+---
+import { asset } from "../utils/base";
+---
+
+<footer
+  class="mt-40 flex flex-col items-center justify-between gap-4 bg-secondary px-8 py-4 text-white md:flex-row"
+>
+  <div class="footer-logo">
+    <img src={asset("img/logo-invert.png")} alt="" class="w-[120px]" />
+  </div>
+  <div class="footer-menu">
+    <ul
+      class="flex list-none flex-col items-center gap-4 md:flex-row md:gap-6"
+    >
+      <li>
+        <a
+          href="#Home"
+          class="text-lg font-medium text-primary no-underline transition-all duration-300 hover:opacity-80"
+          >Inicio</a>
+      </li>
+      <li>
+        <a
+          href="#services"
+          class="text-lg font-medium text-primary no-underline transition-all duration-300 hover:opacity-80"
+          >Servicios</a>
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="text-lg font-medium text-primary no-underline transition-all duration-300 hover:opacity-80"
+          >Contacto</a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-social flex flex-row items-center gap-6">
+    <ul class="mr-0 flex list-none flex-row gap-6 md:mr-12">
+      <li>
+        <a
+          href="https://www.facebook.com/people/Leftis-Systems/61553649370854/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={asset("img/facebook.png")}
+            alt=""
+            class="h-[30px] w-[30px] cursor-pointer transition-all duration-300 hover:opacity-80"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/leftissystem/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={asset("img/instagram.png")}
+            alt=""
+            class="h-[30px] w-[30px] cursor-pointer transition-all duration-300 hover:opacity-80"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>

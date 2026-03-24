@@ -1,0 +1,51 @@
+---
+import { asset } from "../utils/base";
+---
+
+<div id="contact" class="contact mt-40 flex flex-col items-center gap-8">
+  <div
+    data-aos="fade-up"
+    class="title mb-16 flex flex-col items-center gap-8"
+  >
+    <h1 class="text-4xl font-extralight text-secondary md:text-7xl">Contacto</h1>
+    <p class="text-center text-xl font-extralight text-white">
+      ¿Listo para comenzar tu próximo proyecto? Vamos a trabajar!!.
+    </p>
+  </div>
+  <div
+    data-aos="flip-left"
+    data-aos-delay="300"
+    class="contact-form flex w-11/12 max-w-2xl flex-col gap-8 rounded-[20px] bg-white p-8 shadow-[0_0_20px_#a4d8ff] md:w-1/2"
+  >
+    <form action="" class="flex flex-col items-center gap-4">
+      <input
+        type="text"
+        placeholder="Nombre"
+        class="w-4/5 rounded border-0 bg-secondary px-4 py-4 text-primary placeholder:text-primary"
+      />
+      <input
+        type="email"
+        placeholder="Correo"
+        class="w-4/5 rounded border-0 bg-secondary px-4 py-4 text-primary placeholder:text-primary"
+      />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Mensaje..."
+        class="w-4/5 resize-y rounded border-0 bg-secondary px-4 py-4 font-sans text-primary placeholder:text-primary"
+      ></textarea>
+      <button
+        type="submit"
+        class="w-2/5 cursor-pointer rounded border-0 bg-primary px-4 py-2 text-lg font-medium text-secondary transition-all duration-300 hover:opacity-90 md:w-1/5"
+      >
+        <img
+          src={asset("img/enviarForm.png")}
+          alt=""
+          class="mx-auto h-[30px] w-[30px]"
+        />
+      </button>
+    </form>
+  </div>
+</div>
